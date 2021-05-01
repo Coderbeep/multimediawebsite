@@ -1,0 +1,121 @@
+body{
+	font-family: Titillium Web;
+	overflow-x: hidden;
+}
+
+header{
+	float:left;
+	margin-left:100px;
+    position: absolute;
+    width: 15%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+/* TYTUŁ STRONY I ANIMACJA DO TYTULU */
+#spis_tresci{
+	position: absolute;
+	font-size: 36px;
+	margin: 10px 15px 30px 15px;
+	font-weight: 700;
+	margin-top: 70px;
+	top:0px;
+
+	animation-name: szerokosc;
+	animation-duration:2s;
+}
+
+@keyframes szerokosc{
+	0% { font-size:12px; }
+    100% { font-size:36px; }
+}
+/* ================================================ */
+
+
+
+
+
+
+
+/* SKŁADNIKI MENU I ANIMACJE DO NICH */
+.menuid{
+	position:absolute;
+	top:150px;
+}
+.objekt_menu{
+	width: 15%;
+	height: 30px;
+}
+.menu{
+	position:absolute;
+	font-size: 18px;
+	margin: 5px 25px;
+	font-weight: 300;
+}
+.menu:hover{
+	color: #408FB4;
+	font-weight: 700;
+
+	animation-name:przesun_w_prawo;
+	animation-duration:1s;
+	animation-fill-mode: forwards;
+}
+@keyframes przesun_w_prawo{
+	0% { font-size:18px; left:0px; }
+    100% { font-size:20px; left:10px; }
+}
+
+hr.format{
+	margin-top:20px;
+}
+
+#dopisek{
+	padding-top:20px;
+	padding-left: 15px;
+	padding-right: 20px;
+	color: #CBD0D3;
+	font-size: 14px;
+}
+/* ================================================ */
+
+
+
+
+
+
+
+.post-content{
+  width:85%;
+	height: 100%;
+	float: left;
+
+	margin-left: 25%;
+	margin-top: 120px;
+}
+
+
+.informacja{
+	background-color: white;
+	position: absolute;
+	width: 500px;
+	height: 350px;
+	top: 300px; left: 1300px;
+	font-size:70px;
+}
+
+.informacja .naglowek{
+	padding-top: 5px;
+	padding-left: 50px;
+	font-weight: 300;
+}
+
+.informacja .opis{
+	padding-left: 50px;
+	font-size: 20px;
+	color: gray;
+}
