@@ -1,0 +1,304 @@
+body{
+	font-family: Titillium Web;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+header{
+	float:left;
+	margin-left:50px;
+  position: absolute;
+  width: 15%;
+  height: 100%;
+}
+
+#headerFIX{
+	position:fixed;
+	width:500px;
+}
+
+
+
+
+/* TYTUŁ STRONY I ANIMACJA DO TYTULU */
+#spis_tresci{
+	position: absolute;
+	font-size: 36px;
+	margin: 10px 15px 30px 15px;
+	font-weight: 700;
+	margin-top: 100px;
+	top:0px;
+	width:250px;
+
+
+	animation-name: szerokosc;
+	animation-duration:2s;
+}
+
+@keyframes szerokosc{
+	0% { font-size:12px; }
+    100% { font-size:36px; }
+}
+/* ================================================ */
+
+
+
+
+
+
+
+/* SKŁADNIKI MENU I ANIMACJE DO NICH */
+.menuid{
+	position:absolute;
+	top:150px;
+	width:250px;
+}
+.objekt_menu{
+	cursor: pointer;
+	width: 15%;
+	height: 30px;
+}
+.menu{
+	position:absolute;
+	font-size: 18px;
+	margin: 5px 25px;
+	font-weight: 300;
+}
+.menu:hover{
+	color: #408FB4;
+	font-weight: 700;
+
+	animation-name:przesun_w_prawo;
+	animation-duration:1s;
+	animation-fill-mode: forwards;
+}
+@keyframes przesun_w_prawo{
+	0% { font-size:18px; left:0px; }
+    100% { font-size:20px; left:10px; }
+}
+
+hr.format{
+	margin-top:20px;
+}
+
+#dopisek{
+	padding-top:20px;
+	padding-left: 15px;
+	padding-right: 20px;
+	color: #CBD0D3;
+	font-size: 14px;
+}
+/* ================================================ */
+
+
+
+
+
+
+
+.post-content{
+	float: left;
+	margin-left: 25%;
+	margin-top: 120px;
+}
+
+
+.informacja{
+	background-color: white;
+	position: absolute;
+	width: 500px;
+	height: 350px;
+	top: 300px; left: 1300px;
+	font-size:70px;
+}
+
+.informacja .naglowek{
+	padding-top: 5px;
+	padding-left: 50px;
+	font-weight: 300;
+}
+
+.informacja .opis{
+	padding-left: 50px;
+	font-size: 20px;
+	color: gray;
+}
+
+.tytul{
+		font-weight: 300;
+		font-size: 50px;
+		padding-top: -30px;
+		margin: 0px;
+}
+
+#sekcja2{
+	position: absolute;
+	top: 1080px;
+	width: 1400px;
+	height: 900px;
+	left: 380px;
+}
+#sekcja2 .obrazek1{
+	position:absolute;
+	padding-left: 30px;
+	padding-top: 70px;
+}
+.sekcja2_obramowanie{
+	position: absolute;
+	margin-left: 100px;
+	width:1500px;
+	height:800px;
+	border-top: 20px solid black;
+	border-left: 20px solid black;
+}
+
+.mySlides{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding-left: 550px;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 4s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+	left:550px;
+}
+
+#sekcja2_naglowek{
+	position: absolute;
+	left: 50px;
+	top: 70px;
+	font-size:70px;
+}
+#sekcja2_opis{
+	position: absolute;
+	left: 50px;
+	top: 170px;
+	font-size: 20px;
+	color: gray;
+}
+
+
+#sekcja3{
+position: absolute;
+top: 2180px;
+width: 1400px;
+height: 900px;
+left: 380px;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 568px;
+  height: 348px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#sekcja4{
+position: absolute;
+top: 3260px;
+width: 1400px;
+height: 900px;
+left: 380px;
+}
+
+#sekcja5{
+position: absolute;
+top: 4260px;
+width: 1400px;
+height: 900px;
+left: 380px;
+}
+
+#audiobook1{
+	position: absolute;
+	width: 1000px;
+	top: 750px;
+	left: 150px;
+}
+
+.tytul2{
+		font-weight: 300;
+		font-size: 50px;
+		padding-top: -30px;
+		margin: 0px;
+}
+
+#sekcja6{
+position: absolute;
+top: 5260px;
+width: 1400px;
+height: 900px;
+left: 380px;
+}
+#galeria_zdjec{
+	position: absolute;
+	top: 80px;
+	width: 1300px;
+	height: 700px;
+}
+
+#sekcja7{
+position: absolute;
+top: 6260px;
+width: 1400px;
+height: 900px;
+left: 380px;
+}
+
+.fancy-border {
+  border: 25px solid #000000;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}
